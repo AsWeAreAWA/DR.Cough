@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.awa.coughapp1.CoughButtonActivity"
+    android:background="@drawable/bact_bg3"
+    >
+
+    <Space
+        android:layout_height="1300dp"
+        android:layout_width="wrap_content"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="103dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sending data to server..."
+            android:textSize="20sp"
+            android:textColor="#ff000000"
+            android:layout_gravity="center"/>
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Processing..."
+            android:textSize="20sp"
+            android:textColor="#fff00f00"/>
+
+        <Button
+            android:textSize="20sp"
+            android:id="@+id/record"
+            android:layout_width="96dp"
+            android:layout_height="98dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/processing"
+            android:layout_below="@+id/space"
+            android:onClick="showResults"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.awa.coughapp1.SurveyActivity"
+    android:background="@drawable/bact_bg3"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:text="Symptom analysis"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="#fff00f00"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <Space
+            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            />
+
+        <TextView
+            android:text="Question nr1\nxxxxx xxx...xxx?"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="gravity"
+            android:id="@+id/question"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#ff000000"
+            />
+        <Space
+            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            />
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/YES"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:background="@drawable/yes"
+                android:layout_gravity="left"
+                android:onClick="yes"/>
+            <Space
+                android:layout_height="wrap_content"
+                android:layout_width="30dp"
+                />
+            <Button
+                android:id="@+id/NO"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:layout_gravity="right"
+                android:background="@drawable/no"
+                android:onClick="no"/>
+
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/showResBtn"
+            android:layout_width="140dp"
+            android:layout_height="70dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:background="@drawable/show_results"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:onClick="sendData"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

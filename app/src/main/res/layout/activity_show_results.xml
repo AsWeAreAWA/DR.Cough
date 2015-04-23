@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.awa.coughapp1.ShowResults"
+    android:background="@drawable/bact_bg3"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/diagnoseText"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="No data from the server"
+            android:textSize="20sp"
+            android:textColor="#fff00f00"/>
+
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/probabilityText"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="No internet"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_gravity="center_horizontal" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/advice"
+            android:layout_width="220dp"
+            android:adjustViewBounds="true"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Be careful! I suggest that you consult a doctor! This app is just for guidance."
+            android:textSize="15sp"
+            android:textColor="#fff00f00"
+            android:layout_gravity="center_horizontal" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="70dp"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:background="@drawable/test_again"
+            android:onClick="returnToMain"/>
+    </LinearLayout>
+
+</RelativeLayout>

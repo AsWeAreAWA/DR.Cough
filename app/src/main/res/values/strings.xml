@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">DR.Cough</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="start_message">Hi! Dr. Cough will help you diagnose your respiratory disease </string>
+    <string name="lets_start">Let\'s Start!</string>
+    <string name="disclaimer_title">DISCLAIMER</string>
+    <string name="disclaimer">This application is ....
+    Lorem ipsum dolor sit amet,
+        mei in dolorum corpora. Duo assum nonumy utamur no,
+        ex usu prima eloquentiam. Saepe scripta reformidans an per,
+        sed ut ferri mutat complectitur, eam ne rebum intellegam.
+        </string>
+    <string name="title_activity_cough_button">CoughButtonActivity</string>
+    <string name="instructions">Press the red button and hold it while you are coughing.
+        When you finished release it. The sound will be recorded.</string>
+    <string name="title_activity_survey">SurveyActivity</string>
+    <string name="survey">For increasing the accuracy of the results, please answer to the following questions:</string>
+    <string name="title_activity_show_results">ShowResults</string>
+    <string name="title_activity_survey_ativity">SurveyAtivity</string>
+    <string name="title_activity_process">ProcessActivity</string>
+</resources>
